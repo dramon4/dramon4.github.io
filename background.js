@@ -5,7 +5,7 @@ const IMG_NUMBER = 5;
 function paintImage(imgNumber) {
   const image = new Image();
   //random 함수가 0을 주면 +1을 넣어서 첫번째가 되고, 그다음 1주어지면 2가되어 두번쨰, 2는 3번쨰...
-  image.src = `image/${imgNumber + 1}.jpg`;
+  image.src = `${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");
   body.appendChild(image);
 }
